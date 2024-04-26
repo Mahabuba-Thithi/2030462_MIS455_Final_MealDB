@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure body takes up at least the height of the viewport */
+    position: relative; /* Needed for footer positioning */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    width: 100% !important;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 70px;
+}
+
+main {
+    padding: 20px;
+    flex: 1 0 auto; /* Ensure main content takes up remaining space */
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 320px;
+    height: 450px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 200px;
+    height: 150px;
+    margin: 15px auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card-content {
+    text-align: left;
+    padding: 0 15px;
+}
+
+.card-content h1 {
+    margin: 10px;
+    width: 280px;
+    
+    font-size: 15px;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin: 6px;
+    width: 285px; /* Keep the width as specified */
+    height: 150px;
+    overflow: auto;
+    text-align: justify; /* Justify the text */
+    line-height: 1.6; /* Increase line-height for better readability */
+    padding-right: 1.5px; /* Reduce the padding to slim down the sidebar */
+    border-right: 1.5px solid #646464; /* Set the border color and width */
+}
+
+::-webkit-scrollbar {
+    width: 1.5px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #646464; /* Set the color of the scrollbar thumb */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+    width: 30%;
+}
+
+#mainImage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    visibility: visible; /* Initially visible */
+}
+.showAllButton {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+  }
+  
+  .showAllButton:disabled {
+    pointer-events: none;
+  }
+  
+  .showAllButton:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .showAllButton:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
